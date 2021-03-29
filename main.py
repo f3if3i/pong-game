@@ -54,9 +54,9 @@ while game_is_on:
 
     if scoreboard.player1_score > 3 or scoreboard.player2_score > 3:
         if scoreboard.player1_score > scoreboard.player2_score:
-            winner_name = "Player on the left hand side "
-        else:
             winner_name = "Player on the right hand side "
+        else:
+            winner_name = "Player on the left hand side "
         scoreboard.show_winner(winner_name)
         game_is_on = False
 
